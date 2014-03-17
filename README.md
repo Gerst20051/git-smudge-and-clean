@@ -9,13 +9,13 @@ path/to/repo/.git/config
 
 IF YOU WANT TO CONVERT SPACES TO TABS (PUSHING)
 
-[filter "tabs-to-spaces"]
+[filter "spaces-to-tabs"]
 	smudge = unexpand --tabs=4 --first-only
 	clean = expand --tabs=4 --initial
 
 IF YOU WANT TO CONVERT TABS TO SPACES (PUSHING)
 
-[filter "spaces-to-tabs"]
+[filter "tabs-to-spaces"]
 	smudge = expand --tabs=4 --first-only
 	clean = unexpand --tabs=4 --initial
 

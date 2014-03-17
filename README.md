@@ -3,9 +3,13 @@ git-smudge-and-clean
 
 Demonstration Of Git Smudge And Clean
 
-Add This To Your Repo Config File
+Install CoreUtils For Expand And Unexpand Commands On Unix
 
-path/to/repo/.git/config
+`brew install coreutils`
+
+Add This To Your Repo Config File (config.sample)
+
+`path/to/repo/.git/config`
 
 IF YOU WANT TO CONVERT SPACES TO TABS (PUSHING)
 
@@ -19,9 +23,9 @@ IF YOU WANT TO CONVERT TABS TO SPACES (PUSHING)
 	smudge = expand --tabs=4 --first-only
 	clean = unexpand --tabs=4 --initial
 
-Add This To Your Attributes Info File
+Add This To Your Attributes Info File (attributes.sample)
 
-path/to/repo/.git/info/attributes
+`path/to/repo/.git/info/attributes`
 
 IF YOU WANT TO CONVERT SPACES TO TABS
 
